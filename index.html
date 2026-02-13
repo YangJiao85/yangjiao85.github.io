@@ -65,33 +65,30 @@
 					</header>
 					<div class="container">
 						<div class="row">
-							<div class="6u">
-								<article class="box project-card">
-									<h3>[Project title]</h3>
-									<p class="project-tag">[Domain] · [Model family]</p>
-									<ul class="project-list">
-										<li><strong>Problem:</strong> [what decision or outcome improved].</li>
-										<li><strong>Approach:</strong> [core method, experiments, or architecture].</li>
-										<li><strong>Results:</strong> [metric or qualitative impact].</li>
-									</ul>
-									<p class="project-metric">Metric: <span class="metric">[AUC +x%]</span></p>
-									<p class="stack"><strong>Stack:</strong> [Python], [PyTorch], [Airflow], [AWS].</p>
-								</article>
+								<div class="12u">
+									<article class="box project-card">
+										<h3>Job Hunting Assistant AI Agent</h3>
+										<p class="project-tag">Production Web App · ML-Powered Workflow</p>
+										<p>I built and deployed a production-oriented web application that turns job search tracking into an ML-powered workflow. The product combines structured application management with semantic search and an AI assistant, so users can quickly find relevant opportunities, import job data from web/CSV sources, and make better application decisions with analytics. This project demonstrates my end-to-end ownership across modeling, backend APIs, frontend UX, and cloud deployment.</p>
+										<p><strong>Web App:</strong> <a href="https://jobhunter.yang-jiao.com/" target="_blank" rel="noopener noreferrer">https://jobhunter.yang-jiao.com/</a></p>
+										<p><strong>Tech stack</strong></p>
+										<ul class="project-list">
+											<li><strong>Frontend:</strong> React 18 + Vite, React Router, Zustand, Tailwind CSS, Recharts, Axios, Nginx.</li>
+											<li><strong>Backend:</strong> Python FastAPI, JWT auth, LangChain-based chatbot tooling, Sentence Transformers (all-mpnet-base-v2).</li>
+											<li><strong>Data layer:</strong> PostgreSQL + pgvector (768-d embeddings, HNSW index for similarity search).</li>
+											<li><strong>AI capabilities:</strong> Semantic retrieval, LLM integration (Anthropic Claude / Google Gemini), tool-calling for CSV import, web extraction, and SQL generation.</li>
+										</ul>
+										<p><strong>AWS ECS deployment</strong></p>
+										<ul class="project-list">
+											<li>Containerized frontend, backend, and PostgreSQL services with Docker, pushed to Amazon ECR.</li>
+											<li>Deployed on Amazon ECS Fargate with private/public subnet architecture, ALB routing, and service discovery via AWS Cloud Map.</li>
+											<li>Implemented blue/green deployments for frontend and backend using AWS CodeDeploy.</li>
+											<li>Managed secrets through AWS Secrets Manager and centralized logs in CloudWatch.</li>
+											<li>Automated infra + app delivery through GitHub Actions (OIDC to AWS, CloudFormation for IaC, ECS task registration/deployment).</li>
+										</ul>
+									</article>
+								</div>
 							</div>
-							<div class="6u">
-								<article class="box project-card">
-									<h3>[Project title]</h3>
-									<p class="project-tag">[Domain] · [Model family]</p>
-									<ul class="project-list">
-										<li><strong>Problem:</strong> [what decision or outcome improved].</li>
-										<li><strong>Approach:</strong> [core method, experiments, or architecture].</li>
-										<li><strong>Results:</strong> [metric or qualitative impact].</li>
-									</ul>
-									<p class="project-metric">Metric: <span class="metric">[Latency -x%]</span></p>
-									<p class="stack"><strong>Stack:</strong> [Python], [Spark], [MLflow], [GCP].</p>
-								</article>
-							</div>
-						</div>
 					</div>
 					<footer>
 						<a href="#contact" class="button big scrolly">Get in touch</a>
