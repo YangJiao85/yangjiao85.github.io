@@ -43,14 +43,48 @@
 			if (skel.vars.IEVersion < 9)
 				$(':last-child').addClass('last-child');
 
-		// Scrolly.
-			$window.load(function() {
+			// Scrolly.
+				$window.load(function() {
 
-				var x = parseInt($('.wrapper').first().css('padding-top')) - 15;
-				$('#nav a, .scrolly').scrolly(1000, x);
+					var x = parseInt($('.wrapper').first().css('padding-top')) - 15;
+					$('#nav a, .scrolly').scrolly(1000, x);
 
-			});
-		
-	});
+				});
+
+			// Foldable project cards.
+				$('.project-card-collapsible').each(function(index) {
+
+					var $card = $(this),
+						$details = $card.find('.project-details').first(),
+						$toggle = $card.find('.project-toggle').first();
+
+					if ($details.length === 0 || $toggle.length === 0)
+						return;
+
+					var detailsId = 'project-details-' + index;
+					$details.attr('id', detailsId);
+					$details.attr('hidden', 'hidden');
+					$toggle.attr('aria-controls', detailsId);
+					$toggle.attr('aria-expanded', 'false');
+					$toggle.text('Show more');
+
+					$toggle.on('click', function() {
+						var isExpanded = $toggle.attr('aria-expanded') === 'true';
+
+						if (isExpanded) {
+							$details.attr('hidden', 'hidden');
+							$toggle.attr('aria-expanded', 'false');
+							$toggle.text('Show more');
+						}
+						else {
+							$details.removeAttr('hidden');
+							$toggle.attr('aria-expanded', 'true');
+							$toggle.text('Show less');
+						}
+					});
+
+				});
+			
+		});
 
 })(jQuery);

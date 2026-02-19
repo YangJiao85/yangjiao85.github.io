@@ -631,19 +631,39 @@
 		margin-bottom: 0.35em;
 	}
 
-	.project-tag
-	{
-		font-size: 0.9em;
-		text-transform: uppercase;
-		letter-spacing: 0.12em;
-		color: var(--accent-cool);
-		margin-bottom: 1em;
-	}
+		.project-tag
+		{
+			font-size: 0.9em;
+			text-transform: uppercase;
+			letter-spacing: 0.12em;
+			color: var(--accent-cool);
+			margin-bottom: 1em;
+		}
 
-	.project-metric
-	{
-		margin-bottom: 0.75em;
-	}
+		.project-card-collapsible .project-link
+		{
+			margin-bottom: 0;
+		}
+
+		.project-card-collapsible .project-details
+		{
+			margin-top: 1.25em;
+		}
+
+		.project-card-collapsible .project-details[hidden]
+		{
+			display: none;
+		}
+
+		.project-card-collapsible .project-toggle
+		{
+			margin-top: 1.25em;
+		}
+
+		.project-metric
+		{
+			margin-bottom: 0.75em;
+		}
 
 	.metric
 	{
