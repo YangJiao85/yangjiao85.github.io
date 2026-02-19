@@ -64,10 +64,10 @@
 						<p>Case studies that move from research insight to production impact.</p>
 					</header>
 					<div class="container">
-						<div class="row">
-								<div class="12u">
-									<article class="box project-card">
-										<h3>Job Hunting Assistant AI Agent</h3>
+								<div class="row">
+									<div class="12u">
+										<article class="box project-card">
+											<h3>Job Hunting Assistant AI Agent</h3>
 										<p class="project-tag">Production Web App · ML-Powered Workflow</p>
 										<p>I built and deployed a production-oriented web application that turns job search tracking into an ML-powered workflow. The product combines structured application management with semantic search and an AI assistant, so users can quickly find relevant opportunities, import job data from web/CSV sources, and make better application decisions with analytics. This project demonstrates my end-to-end ownership across modeling, backend APIs, frontend UX, and cloud deployment.</p>
 										<p><strong>Web App:</strong> <a href="https://jobhunter.yang-jiao.com/" target="_blank" rel="noopener noreferrer">https://jobhunter.yang-jiao.com/</a></p>
@@ -85,11 +85,30 @@
 											<li>Implemented blue/green deployments for frontend and backend using AWS CodeDeploy.</li>
 											<li>Managed secrets through AWS Secrets Manager and centralized logs in CloudWatch.</li>
 											<li>Automated infra + app delivery through GitHub Actions (OIDC to AWS, CloudFormation for IaC, ECS task registration/deployment).</li>
-										</ul>
-									</article>
+											</ul>
+										</article>
+									</div>
+									<div class="12u">
+										<article class="box project-card">
+											<h3>ENTSO-E Load Forecasting App</h3>
+											<p class="project-tag">End-to-End ML App · Time-Series Forecasting</p>
+											<p>I built an end-to-end machine learning application for forecasting day-ahead electricity load in the Germany-Luxembourg (DE-LU) bidding zone. The app ingests load data from the ENTSO-E Transparency Platform and weather data from Open-Meteo, engineers time-series features, and trains forecasting models for operational use. It includes a FastAPI backend for serving forecasts and metrics and a Streamlit dashboard for interactive monitoring and exploration.</p>
+											<p><strong>Web App:</strong> <a href="https://entso-e-load-forecasting.streamlit.app/" target="_blank" rel="noopener noreferrer">https://entso-e-load-forecasting.streamlit.app/</a></p>
+											<p><strong>Tech stack</strong></p>
+											<ul class="project-list">
+												<li><strong>Language:</strong> Python 3.10+.</li>
+												<li><strong>Data &amp; ML:</strong> pandas, numpy, scikit-learn, LightGBM, joblib.</li>
+												<li><strong>Data sources:</strong> ENTSO-E API (entsoe-py), Open-Meteo API (openmeteo-requests).</li>
+												<li><strong>Backend API:</strong> FastAPI, Uvicorn, Pydantic, Pydantic Settings.</li>
+												<li><strong>Dashboard/UI:</strong> Streamlit, Plotly.</li>
+												<li><strong>Database layer:</strong> PostgreSQL (psycopg2-binary), SQLAlchemy.</li>
+												<li><strong>Infrastructure &amp; runtime:</strong> Docker, Docker Compose.</li>
+												<li><strong>Developer tooling:</strong> pytest, pytest-cov, pytest-asyncio, Ruff, mypy, Makefile.</li>
+											</ul>
+										</article>
+									</div>
 								</div>
-							</div>
-					</div>
+						</div>
 					<footer>
 						<a href="#contact" class="button big scrolly">Get in touch</a>
 					</footer>
