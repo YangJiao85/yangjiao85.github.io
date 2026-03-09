@@ -68,24 +68,18 @@
 									<div class="12u">
 										<article class="box project-card project-card-collapsible">
 											<h3>Job Hunting Assistant AI Agent</h3>
-											<p class="project-tag">Production Web App · ML-Powered Workflow</p>
-											<p class="project-intro">I built and deployed a production-oriented web application that turns job search tracking into an ML-powered workflow. The product combines structured application management with semantic search and an AI assistant, so users can quickly find relevant opportunities, import job data from web/CSV sources, and make better application decisions with analytics. This project demonstrates my end-to-end ownership across modeling, backend APIs, frontend UX, and cloud deployment.</p>
+											<p class="project-tag">Production Web App · AI Workflow Orchestration</p>
+											<p class="project-intro">I built and deployed a production-oriented web application that turns job hunting into an AI-driven workflow system. The assistant runs through an orchestrated pipeline: intent classification, tool selection, guarded execution, response synthesis, and message persistence. This project showcases end-to-end ownership across AI workflow design, backend systems, frontend UX, and cloud deployment.</p>
 											<p class="project-link"><strong>Web App:</strong> <a href="https://jobhunter.yang-jiao.com/" target="_blank" rel="noopener noreferrer">https://jobhunter.yang-jiao.com/</a></p>
 											<div class="project-details">
+												<p><strong>Workflow capabilities:</strong> The core of the platform is a tool-augmented assistant built with FastAPI, LangChain, and LangGraph. I implemented multiple workflow capabilities, including natural-language database querying (NL-to-SQL with safety checks and refinement), AI-assisted CSV import for messy job-tracking data, schema-constrained webpage extraction for job posting ingestion, and profile-aware drafting powered by user CV/portfolio context.</p>
+												<p><strong>Production reliability:</strong> I focused heavily on production reliability for LLM systems: deterministic policy routing, required-tool guard nodes, retry logic for transient model/provider failures, structured telemetry, and token usage tracking. I also added test coverage around workflow orchestration, policy enforcement, and tool behavior to improve maintainability and regression safety.</p>
+												<p><strong>Cloud deployment:</strong> The application is containerized with Docker and deployed on AWS using ECS Fargate for frontend/backend services and Amazon RDS PostgreSQL for persistence. Delivery is automated via GitHub Actions with OIDC-based AWS auth, CloudFormation infrastructure-as-code, CodeDeploy blue/green deployments, Secrets Manager for secret management, and CloudWatch for centralized logging.</p>
 												<p><strong>Tech stack</strong></p>
 												<ul class="project-list">
-													<li><strong>Frontend:</strong> React 18 + Vite, React Router, Zustand, Tailwind CSS, Recharts, Axios, Nginx.</li>
-													<li><strong>Backend:</strong> Python FastAPI, JWT auth, LangChain-based chatbot tooling, Sentence Transformers (all-mpnet-base-v2).</li>
-													<li><strong>Data layer:</strong> PostgreSQL + pgvector (768-d embeddings, HNSW index for similarity search).</li>
-													<li><strong>AI capabilities:</strong> Semantic retrieval, LLM integration (Anthropic Claude / Google Gemini), tool-calling for CSV import, web extraction, and SQL generation.</li>
-												</ul>
-												<p><strong>AWS ECS deployment</strong></p>
-												<ul class="project-list">
-													<li>Containerized frontend, backend, and PostgreSQL services with Docker, pushed to Amazon ECR.</li>
-													<li>Deployed on Amazon ECS Fargate with private/public subnet architecture, ALB routing, and service discovery via AWS Cloud Map.</li>
-													<li>Implemented blue/green deployments for frontend and backend using AWS CodeDeploy.</li>
-													<li>Managed secrets through AWS Secrets Manager and centralized logs in CloudWatch.</li>
-													<li>Automated infra + app delivery through GitHub Actions (OIDC to AWS, CloudFormation for IaC, ECS task registration/deployment).</li>
+													<li><strong>AI/ML &amp; Backend Stack:</strong> FastAPI, LangChain, LangGraph, OpenAI/Anthropic/Gemini, PostgreSQL, JWT auth</li>
+													<li><strong>Cloud &amp; DevOps:</strong> Docker, Amazon ECS Fargate, Amazon RDS, ALB, Cloud Map, CodeDeploy, CloudFormation, GitHub Actions, Secrets Manager, CloudWatch</li>
+													<li><strong>Frontend:</strong> React 18, Vite, Zustand, Tailwind CSS, Recharts, Axios</li>
 												</ul>
 											</div>
 											<button type="button" class="button alt project-toggle">Show more</button>
