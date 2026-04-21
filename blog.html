@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Blog | Yang Jiao</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Writing on ML systems, Python, MLOps, and engineering in production by Yang Jiao." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" media="screen and (min-width: 737px)" />
+		<link rel="stylesheet" href="css/style-mobile.css" media="screen and (max-width: 736px)" />
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html#top">Home</a></li>
+					<li><a href="index.html#projects">Projects</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Blog listing -->
+			<div class="wrapper style1 first">
+				<div class="blog-page-container">
+
+					<header class="blog-page-header">
+						<p class="eyebrow">Writing</p>
+						<h1>Blog</h1>
+						<p class="lead">Practical notes on ML systems, Python, and production engineering.</p>
+					</header>
+
+					<!-- Tag filter (decorative — no JS filtering needed for a small list) -->
+					<div class="blog-tag-filter" aria-label="Topics">
+						<span class="tag tag-ml">Machine Learning</span>
+						<span class="tag tag-mlops">MLOps</span>
+						<span class="tag tag-python">Python</span>
+						<span class="tag tag-llm">LLMs</span>
+						<span class="tag tag-timeseries">Time Series</span>
+					</div>
+
+					<!-- Article list -->
+
+					<article class="box blog-list-card">
+						<div class="blog-meta">
+							<span class="tag tag-llm">LLMs</span>
+							<span class="blog-date">April 14, 2025</span>
+							<span class="blog-read-time">8 min read</span>
+						</div>
+						<h3><a href="blog/building-llm-workflows.html">Building Production-Grade LLM Workflows with LangGraph</a></h3>
+						<p class="blog-abstract">How I designed the orchestration layer for the Job Hunting Assistant—deterministic routing, required-tool guard nodes, retry logic for transient failures, and structured telemetry. A practical guide to making LLM agents actually reliable in production.</p>
+					</article>
+
+					<article class="box blog-list-card">
+						<div class="blog-meta">
+							<span class="tag tag-timeseries">Time Series</span>
+							<span class="blog-date">March 28, 2025</span>
+							<span class="blog-read-time">6 min read</span>
+						</div>
+						<h3><a href="blog/time-series-feature-engineering.html">Feature Engineering for Electricity Load Forecasting</a></h3>
+						<p class="blog-abstract">The lag selection, calendar encoding, and weather interaction features that made the difference in the ENTSO-E forecasting project. Includes code for building a feature pipeline with pandas and scikit-learn transformers.</p>
+					</article>
+
+					<article class="box blog-list-card">
+						<div class="blog-meta">
+							<span class="tag tag-mlops">MLOps</span>
+							<span class="blog-date">March 10, 2025</span>
+							<span class="blog-read-time">5 min read</span>
+						</div>
+						<h3><a href="blog/deploying-ml-aws-ecs.html">Deploying ML Workloads on AWS ECS Fargate</a></h3>
+						<p class="blog-abstract">Blue/green deployments with CodeDeploy, OIDC-based GitHub Actions auth, and how I structured CloudFormation for a multi-service ML platform. What worked, what didn't, and what I'd do differently.</p>
+					</article>
+
+					<article class="box blog-list-card">
+						<div class="blog-meta">
+							<span class="tag tag-python">Python</span>
+							<span class="tag tag-mlops">MLOps</span>
+							<span class="blog-date">February 20, 2025</span>
+							<span class="blog-read-time">7 min read</span>
+						</div>
+						<h3><a href="blog/fastapi-ml-services.html">Structuring FastAPI Projects for ML Services</a></h3>
+						<p class="blog-abstract">A layout and dependency injection pattern for FastAPI that scales from a single-model endpoint to a multi-service ML platform. Router separation, Pydantic settings management, and making testing not terrible.</p>
+					</article>
+
+					<article class="box blog-list-card">
+						<div class="blog-meta">
+							<span class="tag tag-llm">LLMs</span>
+							<span class="tag tag-mlops">MLOps</span>
+							<span class="blog-date">January 30, 2025</span>
+							<span class="blog-read-time">6 min read</span>
+						</div>
+						<h3><a href="blog/llm-observability.html">Token Tracking and Observability for LLM Applications</a></h3>
+						<p class="blog-abstract">How I built structured telemetry into the Job Hunting Assistant to track token usage, latency, and failure modes per workflow step. Lightweight approaches that don't require a full observability platform.</p>
+					</article>
+
+					<footer style="margin-top: 3em;">
+						<a href="index.html" class="button alt">&larr; Back to portfolio</a>
+					</footer>
+
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<div class="wrapper style4">
+				<div class="blog-page-container">
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Yang Jiao. All rights reserved.</li>
+						</ul>
+					</footer>
+				</div>
+			</div>
+
+	</body>
+</html>

@@ -232,3 +232,30 @@
 			padding-left: 0;
 			margin-left: 0;
 		}
+
+/*********************************************************************************/
+/* Blog (desktop)                                                                */
+/*********************************************************************************/
+
+	.blog-card-featured
+	{
+		min-height: 320px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.blog-card-featured .blog-abstract
+	{
+		flex: 1;
+	}
+
+	.article-title
+	{
+		font-size: 2.6em;
+	}
+
+	.article-footer-nav
+	{
+		margin-top: 1em;
+	}

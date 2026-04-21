@@ -212,3 +212,38 @@
 		{
 			display: block;
 		}
+/*********************************************************************************/
+/* Blog (mobile)                                                                 */
+/*********************************************************************************/
+
+	.blog-meta
+	{
+		gap: 0.4em;
+	}
+
+	.blog-card-secondary + .blog-card-secondary
+	{
+		margin-top: 0;
+	}
+
+	.article-title
+	{
+		font-size: 1.8em;
+	}
+
+	.article-footer-nav
+	{
+		flex-direction: column;
+		gap: 1.5em;
+	}
+
+	.article-footer-next
+	{
+		text-align: left;
+	}
+
+	pre
+	{
+		font-size: 0.78em;
+		padding: 1em 1.1em;
+	}

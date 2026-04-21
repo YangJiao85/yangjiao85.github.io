@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Blog Article Template
+	Copy this file, rename it (e.g. blog/my-post-slug.html), and fill in:
+	  - <title> and <meta name="description">
+	  - The tag class and text in .blog-meta
+	  - .article-title text
+	  - .article-meta date and read time
+	  - .article-body content (h2/h3, p, callout divs, pre/code blocks)
+	  - .article-footer-nav links (prev / next article)
+	  - .article-related-tags links
+-->
+<html>
+	<head>
+		<title>Article Title | Yang Jiao</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="One-sentence description of this article for search engines." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- CSS loads directly (no skel) so paths resolve relative to this file -->
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/style-desktop.css" media="screen and (min-width: 737px)" />
+		<link rel="stylesheet" href="../css/style-mobile.css" media="screen and (max-width: 736px)" />
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="../index.html#top">Home</a></li>
+					<li><a href="../index.html#projects">Projects</a></li>
+					<li><a href="../blog.html">Blog</a></li>
+					<li><a href="../index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Article -->
+			<div class="wrapper style1 first">
+				<div class="article-reading-wrapper">
+
+					<!-- ═══════════════════════════════════════════
+					     HEADER: tag, title, metadata
+					     ═══════════════════════════════════════════ -->
+					<header>
+						<!-- Pick one tag class: tag-ml  tag-mlops  tag-python  tag-llm  tag-timeseries -->
+						<div class="blog-meta" style="margin-bottom: 1.1em;">
+							<a href="../blog.html" class="tag tag-ml" style="text-decoration:none;">Machine Learning</a>
+						</div>
+						<h1 class="article-title">Your Article Title Goes Here</h1>
+						<div class="article-meta">
+							<span class="blog-date">Month DD, YYYY</span>
+							<span class="blog-read-time">N min read</span>
+						</div>
+					</header>
+
+					<!-- ═══════════════════════════════════════════
+					     BODY: prose, headings, callouts, code
+					     ═══════════════════════════════════════════ -->
+					<div class="article-body">
+
+						<p>Opening paragraph. Set up the problem or context before diving into details. Keep sentences short.</p>
+
+						<p>Second paragraph. Expand on the motivation. Why does this matter?</p>
+
+						<!-- ── Section heading ── -->
+						<h2>First Major Section</h2>
+
+						<p>Section content. Use <code>inline code</code> for identifiers, class names, or short expressions.</p>
+
+						<!-- ── Code block ── -->
+<pre><code># Python code block example
+def example_function(arg: str) -> str:
+    """Docstring."""
+    return arg.strip().lower()</code></pre>
+
+						<p>Paragraph following the code block. Explain what the code does or why a design decision was made.</p>
+
+						<!-- ── Callout: note (blue) ── -->
+						<div class="callout callout-note">
+							<span class="callout-label">Note</span>
+							<p>Use this for supplementary information or clarifications that are helpful but not critical to the main flow.</p>
+						</div>
+
+						<!-- ── Sub-section ── -->
+						<h3>A Sub-Topic</h3>
+
+						<p>Sub-section content. H3 headings work well for narrower topics within a section.</p>
+
+						<!-- ── Callout: tip (green) ── -->
+						<div class="callout callout-tip">
+							<span class="callout-label">Tip</span>
+							<p>Use this for actionable advice or shortcuts the reader can apply directly.</p>
+						</div>
+
+						<!-- ── Second major section ── -->
+						<h2>Second Major Section</h2>
+
+						<p>Continue the article. Aim for 3–5 major sections. Each section should move the story forward.</p>
+
+						<!-- ── Callout: warning (orange) ── -->
+						<div class="callout callout-warning">
+							<span class="callout-label">Watch out</span>
+							<p>Use this for common mistakes, gotchas, or things that caused problems in your own experience.</p>
+						</div>
+
+						<h2>Closing Thoughts</h2>
+
+						<p>Wrap up. Summarize the key takeaways without restating everything. What should the reader do next?</p>
+
+						<p>Link back to related work or projects where relevant: <a href="../index.html#projects">projects</a>.</p>
+
+					</div>
+					<!-- end .article-body -->
+
+					<!-- ═══════════════════════════════════════════
+					     FOOTER: prev/next + related tags
+					     ═══════════════════════════════════════════ -->
+					<footer class="article-footer">
+						<nav class="article-footer-nav">
+							<!-- Remove whichever side doesn't apply -->
+							<div class="article-footer-prev">
+								<span class="article-footer-nav-label">Previous article</span>
+								<h4><a href="previous-article-slug.html">&larr; Previous Article Title</a></h4>
+							</div>
+							<div class="article-footer-next">
+								<span class="article-footer-nav-label">Next article</span>
+								<h4><a href="next-article-slug.html">Next Article Title &rarr;</a></h4>
+							</div>
+						</nav>
+						<div>
+							<p class="eyebrow" style="margin-bottom: 0.75em;">More on this topic</p>
+							<!-- Link to blog.html for now; add per-tag filtering later if needed -->
+							<div class="article-related-tags">
+								<a href="../blog.html" class="tag tag-ml">Machine Learning</a>
+								<a href="../blog.html" class="tag tag-python">Python</a>
+							</div>
+						</div>
+					</footer>
+
+					<div style="margin-top: 2.5em;">
+						<a href="../blog.html" class="button alt">&larr; All posts</a>
+					</div>
+
+				</div>
+				<!-- end .article-reading-wrapper -->
+			</div>
+
+		<!-- Site footer -->
+			<div class="wrapper style4">
+				<div class="blog-page-container">
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Yang Jiao. All rights reserved.</li>
+						</ul>
+					</footer>
+				</div>
+			</div>
+
+	</body>
+</html>

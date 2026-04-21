@@ -31,6 +31,7 @@
 				<ul class="container">
 					<li><a href="#top">Home</a></li>
 					<li><a href="#projects">Projects</a></li>
+					<li><a href="#blog">Blog</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -111,6 +112,55 @@
 						</div>
 					<footer>
 						<a href="#contact" class="button big scrolly">Get in touch</a>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Blog Preview -->
+			<div class="wrapper style2">
+				<article id="blog">
+					<header>
+						<h2>From the Blog</h2>
+						<p>Practical notes on ML systems, Python, and engineering in production.</p>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="8u">
+								<article class="box blog-card blog-card-featured">
+									<div class="blog-meta">
+										<span class="tag tag-llm">LLMs</span>
+										<span class="blog-date">April 14, 2025</span>
+										<span class="blog-read-time">8 min read</span>
+									</div>
+									<h3><a href="blog/article-template.html">Building Production-Grade LLM Workflows with LangGraph</a></h3>
+									<p class="blog-abstract">How I designed the orchestration layer for the Job Hunting Assistant—deterministic routing, required-tool guard nodes, retry logic for transient failures, and structured telemetry. A practical guide to making LLM agents actually reliable in production.</p>
+									<a href="blog/article-template.html" class="button alt">Read article</a>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box blog-card blog-card-secondary">
+									<div class="blog-meta">
+										<span class="tag tag-timeseries">Time Series</span>
+										<span class="blog-date">Mar 28, 2025</span>
+										<span class="blog-read-time">6 min read</span>
+									</div>
+									<h3><a href="blog/time-series-feature-engineering.html">Feature Engineering for Electricity Load Forecasting</a></h3>
+									<p class="blog-abstract">The lag selection, calendar encoding, and weather interaction features that made the difference in the ENTSO-E forecasting project.</p>
+								</article>
+								<article class="box blog-card blog-card-secondary">
+									<div class="blog-meta">
+										<span class="tag tag-mlops">MLOps</span>
+										<span class="blog-date">Mar 10, 2025</span>
+										<span class="blog-read-time">5 min read</span>
+									</div>
+									<h3><a href="blog/deploying-ml-aws-ecs.html">Deploying ML Workloads on AWS ECS Fargate</a></h3>
+									<p class="blog-abstract">Blue/green deployments with CodeDeploy, OIDC-based GitHub Actions auth, and how I structured CloudFormation for a multi-service ML platform.</p>
+								</article>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<a href="blog.html" class="button big">Read all posts</a>
 					</footer>
 				</article>
 			</div>
